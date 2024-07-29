@@ -18,6 +18,7 @@ public class Topic_01 {
 	  driver.get(baseUrl);
 	  String title = driver.getTitle();
 	  System.out.println(title);
+	  System.out.print("-----------Test End-----------");
 	  Assert.assertEquals("Your store. Login", title);
   }
   
