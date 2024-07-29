@@ -16,9 +16,11 @@ public class Topic_01 {
 	  String baseUrl = "https://admin-demo.nopcommerce.com/login";
 	  System.out.print("-----------Test first-----------");
 	  driver.get(baseUrl);
+	  driver.manage().window().maximize();
 	  String title = driver.getTitle();
-	  System.out.println(title);
 	  Assert.assertEquals("Your store. Login", title);
+	  System.out.print("-----------Test end-----------");
+	  driver.close();
   }
   
 }
