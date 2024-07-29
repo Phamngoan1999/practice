@@ -14,10 +14,11 @@ public class Topic_01 {
 	  System.setProperty("webdriver.chrome.driver","./browerDriver/chromedriver.exe");
 	  WebDriver driver = new ChromeDriver();
 	  String baseUrl = "https://admin-demo.nopcommerce.com/login";
-	  System.out.print("-----------Test first-----------");
+	  System.out.print("-----------Test First-----------");
 	  driver.get(baseUrl);
 	  String title = driver.getTitle();
 	  System.out.println(title);
+	  System.out.print("-----------Test End-----------");
 	  Assert.assertEquals("Your store. Login", title);
   }
   
